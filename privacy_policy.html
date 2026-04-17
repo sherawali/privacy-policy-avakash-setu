@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Leave App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --primary-light: #a5b4fc;
+            --bg: #fafbfc;
+            --bg-card: #ffffff;
+            --text: #1f2937;
+            --text-muted: #6b7280;
+            --border: #e5e7eb;
+            --accent: #8b5cf6;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a78bfa 100%);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(5%, 5%) rotate(5deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.9);
+            font-weight: 300;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            color: white;
+            margin-bottom: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid var(--border);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(99, 102, 241, 0.1);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .card h2 .icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.25rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .card ul {
+            list-style: none;
+            margin-top: 16px;
+        }
+
+        .card ul li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .card ul li::before {
+            content: '✓';
+            color: var(--primary);
+            font-weight: 600;
+            min-width: 20px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .last-updated {
+            text-align: center;
+            padding: 24px;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <span class="badge">Privacy Policy</span>
+            <h1>Privacy Policy</h1>
+            <p>Your privacy matters to us. This policy explains how we collect, use, and protect your personal information.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <h2><span class="icon">📋</span> Information We Collect</h2>
+            <p>We collect information you provide directly to us, including:</p>
+            <ul>
+                <li>Account information (name, email, phone number)</li>
+                <li>Leave request details (dates, reason, approver details)</li>
+                <li>Device and usage information</li>
+                <li>Communication preferences</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🎯</span> How We Use Your Information</h2>
+            <p>We use the collected information for the following purposes:</p>
+            <ul>
+                <li>Processing and managing leave requests</li>
+                <li>Sending notifications and updates about your requests</li>
+                <li>Improving our app functionality and user experience</li>
+                <li>Complying with legal obligations</li>
+                <li>Customer support and responding to inquiries</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🔒</span> Data Security</h2>
+            <p>We implement appropriate security measures to protect your personal information:</p>
+            <ul>
+                <li>Encryption of data in transit and at rest</li>
+                <li>Regular security audits and assessments</li>
+                <li>Access controls and authentication</li>
+                <li>Secure data storage with industry standards</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📤</span> Data Sharing</h2>
+            <p>We do not sell your personal information. We may share data with:</p>
+            <ul>
+                <li>Service providers who assist with our operations</li>
+                <li>Legal authorities when required by law</li>
+                <li>Your organization's HR/management for approval purposes</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">⏱️</span> Data Retention</h2>
+            <p>We retain your personal information as long as your account is active or as needed to provide you services. You can request deletion of your data at any time.</p>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">🔄</span> Your Rights</h2>
+            <p>You have the following rights regarding your data:</p>
+            <ul>
+                <li>Access and download your personal data</li>
+                <li>Correct inaccurate information</li>
+                <li>Request deletion of your data</li>
+                <li>Opt-out of non-essential data collection</li>
+                <li>Export your data in a portable format</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2><span class="icon">📧</span> Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <ul>
+                <li>Email: privacy@leaveapp.example.com</li>
+                <li>Through your organization IT support</li>
+            </ul>
+        </div>
+
+        <div class="last-updated">
+            <p>Last updated: April 17, 2026</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2026 Leave App. All rights reserved.</p>
+    </div>
+</body>
+</html>
